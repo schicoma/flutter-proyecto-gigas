@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:pasagigas_app/page_pasar_gigas.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      showPerformanceOverlay: true,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Roboto',
       ),
-      home: HomePage()
+      home: PasarGigasPage()
     );
   }
 }
